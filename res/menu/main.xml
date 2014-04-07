@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/action_create"
+          android:title="New Rental"
+          android:icon="@android:drawable/ic_input_add"
+          android:showAsAction="always" />
+</menu>

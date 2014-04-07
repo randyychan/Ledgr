@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333"
+        android:textColor="#FFF"
+        android:textSize="24dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="25dp"
+        android:text="Ledgr" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+		android:paddingLeft="10dp"
+        android:id="@+id/linearLayout"
+        android:gravity="left"
+        android:background="#333"
+        android:orientation="horizontal" >
+    <com.facebook.widget.ProfilePictureView
+            android:id="@+id/selection_profile_pic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="left" />
+    <TextView
+            android:id="@+id/selection_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+	</LinearLayout>
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="none"
+        android:divider="#999"
+        android:dividerHeight="0.1dp"
+        android:background="#FFF"/>
+
+</LinearLayout>
